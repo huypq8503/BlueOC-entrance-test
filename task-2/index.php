@@ -5,8 +5,8 @@ function sum_of_top_integer($array)
     if (count($array) < 2) {
         return null;
     }
-    $max_number1 = $array[0];
-    $max_number2 = $array[1];
+    $max_number1 = max($array[0], $array[1]);
+    $max_number2 = min($array[0], $array[1]);
 
     for ($i = 2; $i < count($array); $i++) {
         if ($array[$i] > $max_number1) {
